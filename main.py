@@ -100,10 +100,11 @@ for index in range(0, 100):
 user = "sb2828sb"
 # user_profile = sp.user(user)
 name = select_date + " Billboard 100"
-create_new_playlist = sp.user_playlist_create(user, name, public=False, collaborative=False,
+create_new_playlist = sp.user_playlist_create(user, name, public=True, collaborative=False,
                                               description=f'Top 100 Billboard songs list in the week of selected date: '
                                                           f'{select_date}')
 playlist_id = create_new_playlist['id']
 sp.playlist_add_items(playlist_id=playlist_id, items=songs_uri_list)
 
 print("Good job! Enjoy your music. :)")
+# print(create_new_playlist)
