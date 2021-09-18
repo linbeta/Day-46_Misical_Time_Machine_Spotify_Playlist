@@ -4,7 +4,7 @@ import os
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from spotipy.oauth2 import SpotifyClientCredentials
-import pprint
+from flask import Flask
 
 select_date = input("Which year do yo want to travel to? Type the date in this format YYYY-MM-DD: ")
 # TODO: add some code to pop-up if the input date is invalid
@@ -33,21 +33,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
                                                client_secret=client_secret,
                                                redirect_uri=redirect_uri,
                                                scope=scope))
-# results =
-# results = sp.playlist_add_items()
 
-### ------- Search an artist's top10 songs cover and preview ---------####
-# radiohead_uri = 'spotify:artist:4Z8W4fKeB5YxbusRsdQVPb'
-#
-# spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
-#
-# results = spotify.artist_top_tracks(radiohead_uri)
-#
-# for track in results['tracks'][:10]:
-#     print('track    : ' + track['name'])
-#     print('audio    : ' + track['preview_url'])
-#     print('cover art: ' + track['album']['images'][0]['url'])
-#     print()
 
 # ----------------SEARCH the song list in spotify api --------------------#
 
