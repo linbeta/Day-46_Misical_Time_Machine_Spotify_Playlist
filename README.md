@@ -5,7 +5,7 @@ This project is the Day-46 project from the Udemy online course: [100 Days of Co
 
 ### The end result of the code
 This playlist is the result of my code:
- <iframe src="https://open.spotify.com/embed/playlist/3WcqEIEu5f2RAA7Xs3AfTj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+https://open.spotify.com/embed/playlist/3WcqEIEu5f2RAA7Xs3AfTj
 
 
 ### Next step
